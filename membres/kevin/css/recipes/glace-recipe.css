@@ -237,24 +237,103 @@ h3{
 }
 
 /** Comment */
-#comment-btn{
+.button {
+    position: relative;
     width: 350px;
-    font-size: 1.50rem;
-    background-color: rgb(var(--main-color));
-    text-shadow: 2px 2px 2px white;
-    color: rgb(var(--main-color));
-    padding: 1rem;
-    outline: 1px solid rgb(var(--main-color));
-    outline-offset: 2px;
-    border: none;
-    margin-bottom: 50px;
-    transition: transform 250ms;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    width: 100%;
 }
 
-#comment-btn:focus{
-
+.triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
 }
 
+.middle {
+    border-width: 10px;
+    top: 50%;
+    left: 50%;
+}
+
+.middle.up{
+    border-color: transparent transparent #000000 transparent;
+    translate: -50% calc(-50% - 20px);
+}
+
+.middle.right{
+    border-color: transparent transparent transparent #000000;
+    translate: calc(-50% + 20px) -50%;
+}
+
+.middle.down{
+    border-color: #000000 transparent transparent transparent;
+    translate: -50% calc(-50% + 20px);
+}
+
+.middle.left{
+    border-color: transparent #000000 transparent transparent;
+    translate: calc(-50% - 20px) -50%;
+}
+
+.middle2 {
+    border-width: 14px;
+    top: 50%;
+    left: 50%;
+}
+
+.middle2.up{
+    border-color: transparent transparent #000000 transparent;
+    translate: calc(-50% + 20px) calc(-50% - 20px);
+    rotate: 45deg;
+}
+
+.middle2.right{
+    border-color: transparent transparent transparent #000000;
+    translate: calc(-50% + 20px) calc(-50% + 20px);
+    rotate: 45deg;
+}
+
+.middle2.down{
+    border-color: #000000 transparent transparent transparent;
+    translate: calc(-50% - 20px) calc(-50% + 20px);
+    rotate: 45deg;
+}
+
+.middle2.left{
+    border-color: transparent #000000 transparent transparent;
+    translate: calc(-50% - 20px) calc(-50% - 20px);
+    rotate: 45deg;
+}
+
+.center {
+    border-width: 10px;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+.center.up{
+    border-color: transparent transparent #000000 transparent;
+}
+
+.center.right{
+    border-color: transparent transparent transparent #000000;
+}
+
+.center.down{
+    border-color: #000000 transparent transparent transparent;
+}
+
+.center.left{
+    border-color: transparent #000000 transparent transparent;
+}
 
 .contact-section {
     padding: 50px 0;
