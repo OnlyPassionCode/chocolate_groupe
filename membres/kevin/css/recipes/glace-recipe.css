@@ -249,90 +249,156 @@ h3{
     width: 100%;
 }
 
-.triangle {
+.button .triangle {
     position: absolute;
     width: 0;
     height: 0;
     border-style: solid;
 }
 
-.middle {
+.button .block{
+    width: 100px;
+    height: 80px;
+    background-color: rgb(var(--main-color));
+}
+
+.button .block.left{
+    margin-right: 80px;
+}
+
+.button .middle {
     border-width: 10px;
     top: 50%;
     left: 50%;
 }
 
-.middle.up{
-    border-color: transparent transparent #000000 transparent;
+.button .middle.up{
+    border-color: transparent transparent rgb(var(--main-color)) transparent;
     translate: -50% calc(-50% - 20px);
 }
 
-.middle.right{
-    border-color: transparent transparent transparent #000000;
+.button .middle.right{
+    border-color: transparent transparent transparent rgb(var(--main-color));
     translate: calc(-50% + 20px) -50%;
 }
 
-.middle.down{
-    border-color: #000000 transparent transparent transparent;
+.button .middle.down{
+    border-color: rgb(var(--main-color)) transparent transparent transparent;
     translate: -50% calc(-50% + 20px);
 }
 
-.middle.left{
-    border-color: transparent #000000 transparent transparent;
+.button .middle.left{
+    border-color: transparent rgb(var(--main-color)) transparent transparent;
     translate: calc(-50% - 20px) -50%;
 }
 
-.middle2 {
+.button .middle2 {
     border-width: 14px;
     top: 50%;
     left: 50%;
 }
 
-.middle2.up{
-    border-color: transparent transparent #000000 transparent;
+.button .middle2.up{
+    border-color: transparent transparent rgb(var(--main-color)) transparent;
     translate: calc(-50% + 20px) calc(-50% - 20px);
     rotate: 45deg;
 }
 
-.middle2.right{
-    border-color: transparent transparent transparent #000000;
+.button .middle2.right{
+    border-color: transparent transparent transparent rgb(var(--main-color));
     translate: calc(-50% + 20px) calc(-50% + 20px);
     rotate: 45deg;
 }
 
-.middle2.down{
-    border-color: #000000 transparent transparent transparent;
+.button .middle2.down{
+    border-color: rgb(var(--main-color)) transparent transparent transparent;
     translate: calc(-50% - 20px) calc(-50% + 20px);
     rotate: 45deg;
 }
 
-.middle2.left{
-    border-color: transparent #000000 transparent transparent;
+.button .middle2.left{
+    border-color: transparent rgb(var(--main-color)) transparent transparent;
     translate: calc(-50% - 20px) calc(-50% - 20px);
     rotate: 45deg;
 }
 
-.center {
+.button .middle3 {
+    border-width: 20px;
+    top: 50%;
+    left: 50%;
+}
+
+.button .middle3.up{
+    border-color: transparent transparent rgb(var(--main-color)) transparent;
+    translate: -50% calc(-50% - 40px);
+}
+
+.button .middle3.right{
+    border-color: transparent transparent transparent rgb(var(--main-color));
+    translate: calc(-50% + 40px) -50%;
+}
+
+.button .middle3.down{
+    border-color: rgb(var(--main-color)) transparent transparent transparent;
+    translate: -50% calc(-50% + 40px);
+}
+
+.button .middle3.left{
+    border-color: transparent rgb(var(--main-color)) transparent transparent;
+    translate: calc(-50% - 40px) -50%;
+}
+
+.button .middle4 {
+    border-width: 29px;
+    top: 50%;
+    left: 50%;
+}
+
+.button .middle4.up{
+    border-color: transparent transparent rgb(var(--main-color)) transparent;
+    translate: calc(-50% + 40px) calc(-50% - 40px);
+    rotate: 45deg;
+}
+
+.button .middle4.right{
+    border-color: transparent transparent transparent rgb(var(--main-color));
+    translate: calc(-50% + 40px) calc(-50% + 40px);
+    rotate: 45deg;
+}
+
+.button .middle4.down{
+    border-color: rgb(var(--main-color)) transparent transparent transparent;
+    translate: calc(-50% - 40px) calc(-50% + 40px);
+    rotate: 45deg;
+}
+
+.button .middle4.left{
+    border-color: transparent rgb(var(--main-color)) transparent transparent;
+    translate: calc(-50% - 40px) calc(-50% - 40px);
+    rotate: 45deg;
+}
+
+.button .center {
     border-width: 10px;
     top: 50%;
     left: 50%;
     translate: -50% -50%;
 }
 
-.center.up{
-    border-color: transparent transparent #000000 transparent;
+.button .center.up{
+    border-color: transparent transparent rgb(var(--main-color)) transparent;
 }
 
-.center.right{
-    border-color: transparent transparent transparent #000000;
+.button .center.right{
+    border-color: transparent transparent transparent rgb(var(--main-color));
 }
 
-.center.down{
-    border-color: #000000 transparent transparent transparent;
+.button .center.down{
+    border-color: rgb(var(--main-color)) transparent transparent transparent;
 }
 
-.center.left{
-    border-color: transparent #000000 transparent transparent;
+.button .center.left{
+    border-color: transparent rgb(var(--main-color)) transparent transparent;
 }
 
 .contact-section {
